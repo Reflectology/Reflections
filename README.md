@@ -9,10 +9,10 @@ And orchestrating the following ecosystem domains:
 - 🏛 `tripleafh.com` – Corporate governance, B2B coordination, symbolic contracts
 - 🔤 `madlad.dev` – Symbolic language core, operator grammar REPL
 - 📜 `docunation.org` – Semantic document engine with nested AST + logic
-- 💱 `fintechtionary.org` – Token logic + economic/financial transformation structure
+- 💱 `fintechtionary.org` – A gamified homonym dictionary of finance and technology terms
 - 🪙 `cbux.me` / `fbux.me` – Blockchain token systems with incentive validation
-- 🗣 `thebkspeaker.com`, `spkr.ink`, `spkr.one` – Identity engine + NLP REPL
-- 🛒 `tdhc.store` – Application outputs from symbolic GUI and design logic
+- 🗣 `thebkspeaker.com`, `spkr.ink`, `spkr.one` – Digital spaces to lift community voices locally and globally
+- 🛒 `tdhc.store` – Cannabis consumption tracker and health consultant
 - 🌱 `lemuria.my` – Animated ecotales using matrix/memory-driven dynamics
 - 🧠 MADLAD clients – Thin LSP/WebSocket symbolic interpreter endpoints
 
