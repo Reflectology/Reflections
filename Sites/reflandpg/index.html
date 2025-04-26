@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflectology: Where Math Meets Code</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Source+Code+Pro&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: Intro & Logo Reveal -->
+        <section id="intro" class="section">
+            <div class="background-animation">
+                <svg id="bg-flow" width="100%" height="100%" preserveAspectRatio="none"></svg>
+            </div>
+            <div id="logo-container">
+                <svg id="logo" viewBox="0 0 800 200" class="logo">
+                    <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" class="logo-text">REFLECTΘLΘGY</text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Equations Image above Section 2 -->
+        <div class="image-container equations-image">
+            <img src="equations.png" alt="Mathematical Equations" class="full-width-image">
+        </div>
+
+        <!-- Section 2: Equation Reveal -->
+        <section id="equation-reveal" class="section">
+            <div id="equation-container">
+                <svg id="equation-svg" viewBox="0 0 900 200" class="equation">
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="equation-text">((p•q)•r)•(p•((p•r)•q)) = r</text>
+                </svg>
+                <div id="variables-highlight">
+                    <div class="variable" id="var-p">p</div>
+                    <div class="variable" id="var-q">q</div>
+                    <div class="variable" id="var-r">r</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dabrains Image below Section 2 -->
+        <div class="image-container dabrains-image">
+            <img src="dabrainsFint.webp" alt="Dabrains Visualization" class="full-width-image">
+        </div>
+
+        <!-- Section 3: Semantic Layer/Tooltip -->
+        <section id="semantic-layer" class="section">
+            <div id="tooltips-container">
+                <div class="tooltip" id="tooltip-vars">
+                    <div class="tooltip-trigger">p, q, r</div>
+                    <div class="tooltip-content">Arbitrary elements in the reflectology system</div>
+                </div>
+                <div class="tooltip" id="tooltip-op">
+                    <div class="tooltip-trigger">•</div>
+                    <div class="tooltip-content">Group operation or pattern application</div>
+                </div>
+                <div class="tooltip" id="tooltip-axiom">
+                    <div class="tooltip-trigger">= r</div>
+                    <div class="tooltip-content">The axiom—pattern always resolves to r in reflectology context</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Dynamic Mapping (Code Connection) -->
+        <section id="code-mapping" class="section">
+            <div id="code-container">
+                <pre><code class="language-c" id="rsc-code-snippet">
+/* From rsc.c */
+rsc_pattern* rsc_create_pattern(rsc_element* p, rsc_element* q, rsc_element* r) {
+    rsc_pattern* pattern = malloc(sizeof(rsc_pattern));
+    pattern->p = p;
+    pattern->q = q;
+    pattern->r = r;
+    return pattern;
+}
+
+rsc_element* rsc_apply_recursive_pattern(rsc_pattern* pattern, rsc_element* input) {
+    /* Apply the core reflectology equation: ((p•q)•r)•(p•((p•r)•q)) = r */
+    rsc_element* pq = rsc_apply(pattern->p, pattern->q);
+    rsc_element* pqr = rsc_apply(pq, pattern->r);
+    
+    rsc_element* pr = rsc_apply(pattern->p, pattern->r);
+    rsc_element* prq = rsc_apply(pr, pattern->q);
+    rsc_element* p_prq = rsc_apply(pattern->p, prq);
+    
+    rsc_element* result = rsc_apply(pqr, p_prq);
+    
+    /* By the reflectology axiom, result should equal r */
+    assert(rsc_elements_equal(result, pattern->r));
+    return pattern->r;
+}
+                </code></pre>
+            </div>
+            <div id="code-mapping-overlay">
+                <div class="mapping-line" id="map-p"></div>
+                <div class="mapping-line" id="map-q"></div>
+                <div class="mapping-line" id="map-r"></div>
+            </div>
+        </section>
+
+        <!-- Section 5: Pattern Evaluation Animation -->
+        <section id="pattern-evaluation" class="section">
+            <div id="evaluation-tree-container">
+                <svg id="eval-tree" width="1000" height="800"></svg>
+            </div>
+            <div id="debug-overlay" class="hidden">
+                <div class="debug-step">((p•q)•r)•(p•((p•r)•q))</div>
+                <div class="debug-step">p³q²r²</div>
+                <div class="debug-step">r</div>
+            </div>
+        </section>
+
+        <!-- Section 6: Advanced Features -->
+        <section id="advanced-features" class="section">
+            <div class="feature-grid">
+                <div class="feature" id="feature-vectors">
+                    <h3>Vector Computation</h3>
+                    <svg class="feature-svg" viewBox="0 0 200 100">
+                        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">[p, q, r] • [x, y, z]</text>
+                    </svg>
+                </div>
+                <div class="feature" id="feature-matrices">
+                    <h3>Matrix Operations</h3>
+                    <svg class="feature-svg" viewBox="0 0 200 100">
+                        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">P • Q = R</text>
+                    </svg>
+                </div>
+                <div class="feature" id="feature-lambda">
+                    <h3>Lambda Calculus</h3>
+                    <svg class="feature-svg" viewBox="0 0 200 100">
+                        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">λx.λy.(x • y)</text>
+                    </svg>
+                </div>
+                <div class="feature" id="feature-groups">
+                    <h3>Group Theory</h3>
+                    <svg class="feature-svg" viewBox="0 0 200 100">
+                        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">G=θ(Ω)-C</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Call to Action -->
+        <section id="call-to-action" class="section">
+            <div id="cta-logo-container">
+                <svg id="cta-logo" viewBox="0 0 800 200" class="logo">
+                    <text x="50%" y="40%" text-anchor="middle" dominant-baseline="middle" class="logo-text">REFLECTΘLΘGY</text>
+                </svg>
+                <svg id="cta-equation" viewBox="0 0 900 100" class="equation">
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="equation-text">((p•q)•r)•(p•((p•r)•q)) = r</text>
+                </svg>
+            </div>
+            <div id="tagline">Reflectology: Where Math Meets Code.</div>
+            <div id="cta-buttons">
+                <button id="explore-btn" class="cta-button">Sponsor</button>
+                <button id="demo-btn" class="cta-button">Contact Us</button>
+            </div>
+        </section>
+    </div>
+    <script src="animation.js"></script>
+</body>
+</html>
