@@ -1,4 +1,4 @@
-Collecting workspace information# Reflectology Website - `reflectology.org`
+Reflectology Website - `reflectology.org`
 
 This project implements the frontend for the Reflectology concept visualization website. It provides an interactive, animated explanation of reflectology principles through visual demonstrations and mathematical representations.
 
