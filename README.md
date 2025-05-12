@@ -6,15 +6,15 @@ This project implements the minimal Reflectology runtime stack, written entirely
 
 And orchestrating the following ecosystem domains:
 
-- 🏛 `tripleafh.com` – Corporate governance, B2B coordination, symbolic contracts
-- 🔤 `madlad.dev` – Symbolic language core, operator grammar REPL
-- 📜 `docunation.org` – Semantic document engine with nested AST + logic
-- 💱 `fintechtionary.org` – A gamified homonym dictionary of finance and technology terms
-- 🪙 `cbux.me` / `fbux.me` – Blockchain token systems with incentive validation
-- 🗣 `thebkspeaker.com`, `spkr.ink`, `spkr.one` – Digital spaces to lift community voices locally and globally
-- 🛒 `tdhc.store` – Cannabis consumption tracker and health consultant
-- 🌱 `lemuria.my` – Animated ecotales using matrix/memory-driven dynamics
-- 🧠 MADLAD clients – Thin LSP/WebSocket symbolic interpreter endpoints
+- 🏛 `tripleafh.com`
+- 🔤 `madlad.dev`
+- 📜 `docunation.org`
+- 💱 `fintechtionary.org`
+- 🪙 `cbux.me` / `fbux.me`
+- 🗣 `thebkspeaker.com`, `spkr.ink`, `spkr.one`
+- 🛒 `tdhc.store`
+- 🌱 `lemuria.my`
+- 🧠 `nathan.ac`
 
 ---
 
@@ -32,7 +32,7 @@ And orchestrating the following ecosystem domains:
 - Fully interpreted in C with REPL loop and AST routing
 
 ### Matrix / Memory / Ω Layer
-- Generic N×M matrix engine (`generic_matrix.c`)
+- Custom matrix engine (`matrices.c`)
 - Symbolic memory block allocation and transformation
 - Inverts, multiplies, and stores symbolic state for GUI, blockchain, NLP
 
@@ -50,9 +50,9 @@ And orchestrating the following ecosystem domains:
 
 ## 🖥 Services & Interfaces
 
-- GTK-based Symbolic GUI Renderer
-- Embedded Web Server (libmicrohttpd & CivetWeb)
-- Token-protected API endpoints (via HAProxy or internal ACL)
+- Custom Symbolic GUI Renderer
+- Embedded Web Server (Custom)
+- Token-protected API endpoints (Custom)
 - Audit logging (`audit.c`) + secure startup (token + TLS enforcement)
 - Email, REPL, WebSocket support for MADLAD clients
 
@@ -64,24 +64,6 @@ And orchestrating the following ecosystem domains:
 - Token verification and runtime guards
 - Signed actions, audit chain to PostgreSQL
 - Identity resolution via NLP routes in `spkr.ink` + `spkr.one`
-
----
-
-## 📦 Structure
-
-```
-src/
-├── engine/       → Core loop, dispatch, orchestration
-├── nlp/          → MADLAD token grammar, REPL
-├── axioms/       → WFF evaluators, group_pow, normalize
-├── matrix/       → Memory & matrix logic
-├── web/          → HTTP endpoints, routing logic
-├── db/           → SQLite + PostgreSQL integration
-├── etl/          → Symbolic ETL bridge
-├── gui/          → GTK forms & reactive interface
-├── security/     → Token guard, crypto, audit
-├── tests/        → Test harness for all logic flows
-```
 
 ---
 
