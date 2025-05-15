@@ -77,4 +77,4 @@ And orchestrating the following ecosystem domains:
 
 ## 🔗 License
 
-MIT — Designed for Reflectological Systems Development
+Reflectology Software License (RSL-1.0)
