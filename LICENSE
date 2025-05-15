@@ -18,16 +18,16 @@ The software implementation (C code, compiled libraries, optimization routines) 
 
 1. **Scope of Use**
    - License grants perpetual use for one individual, organization, school, or government body.
-   - Commercial use is permitted, but redistribution or resale is not.
+   - Commercial use is permitted.
 
 2. **Rights**
    - You may:
      - Use the binary in private or production environments
      - Integrate it into your internal tooling
      - Reference or extend the mathematical framework
-   - You may **not**:
      - Re-sell or sublicense the binary
      - Re-host the compiled code
+   - You may **not**:
      - Misrepresent authorship
 
 3. **Source Code**
@@ -36,8 +36,7 @@ The software implementation (C code, compiled libraries, optimization routines) 
 
 4. **Reimplementation**
    - You are permitted to reimplement Reflectology from the public math.
-   - However, you are not granted any rights to this implementation unless licensed.
-
+   
 ---
 
 ## SUPPORT
