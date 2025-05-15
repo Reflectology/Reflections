@@ -1,21 +1,65 @@
-MIT License
+# Reflectology Software License (RSL-1.0)
 
-Copyright (c) 2025 Reflectology
+**Author:** Algernon Alleng  
+**Date:** May 2025  
+**License Fee:** $200 (perpetual)  
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## SUMMARY
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Reflectology is a symbolic reasoning kernel built to unify decision-making systems across domains.  
+The mathematical theory and axioms behind Reflectology are open and public.  
+The software implementation (C code, compiled libraries, optimization routines) is proprietary.
+
+---
+
+## LICENSE TERMS
+
+1. **Scope of Use**
+   - License grants perpetual use for one individual, organization, school, or government body.
+   - Commercial use is permitted, but redistribution or resale is not.
+
+2. **Rights**
+   - You may:
+     - Use the binary in private or production environments
+     - Integrate it into your internal tooling
+     - Reference or extend the mathematical framework
+   - You may **not**:
+     - Re-sell or sublicense the binary
+     - Re-host the compiled code
+     - Misrepresent authorship
+
+3. **Source Code**
+   - The core symbolic math (axioms, loss/goodness functions) are public domain.
+   - The C code, compiled engines, and performance logic remain proprietary.
+
+4. **Reimplementation**
+   - You are permitted to reimplement Reflectology from the public math.
+   - However, you are not granted any rights to this implementation unless licensed.
+
+---
+
+## SUPPORT
+
+- This license includes updates and bug fixes at no additional charge.
+- Support and consulting available under separate agreement.
+
+---
+
+## WHY $200?
+
+Because the author built a universal engine from the ground up — without backing, grants, or institutions — and is charging less than the cost of a software conference ticket to help **clean up the global logic stack**.
+
+---
+
+## LICENSE ACQUISITION
+
+To obtain a license:
+- Contact: **algernon.alleng@tripleafh.com**
+- Payment: Chase/Zelle
+- Receive: Binary download + Integration docs
+
+---
+
+**Reflectology:** Order from chaos. One kernel. One logic.
