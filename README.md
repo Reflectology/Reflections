@@ -26,7 +26,7 @@ And orchestrating the following ecosystem domains:
 - C (Constraints): Mathematical axioms applied during read/write operations
 - G = θ(Ω) − C: Runtime goodness function embedded in file transformation logic
 
-### MADLAD Language
+### Math Acquisition Device/Language Acquisition Device (MADLAD) Language
 - Symbolic grammar implemented through standard C file operations
 - Dynamic REPL for symbolic programs (`.mdld` files) using `fread`/`fwrite`
 - Pure C implementation with no dependencies beyond `stdio.h`
